@@ -1,0 +1,49 @@
+{
+  "Console log": {
+    "prefix": "clog",
+    "body": ["console.log($1);"],
+    "description": "Console log"
+  },
+  "Default Export Function": {
+    "prefix": "edf",
+    "body": [
+      "export default function ${1:${TM_FILENAME_BASE}}() {",
+      "  return (",
+      "    <>",
+      "      <div></div>",
+      "    </>",
+      "  );",
+      "}"
+    ],
+    "description": "Default export function"
+  },
+  "Default Export Arrow Function": {
+    "prefix": "edaf",
+    "body": [
+      "const ${1:${TM_FILENAME_BASE}} = () => {",
+      "  return (",
+      "    <div>",
+      "      <h1>${1:${TM_FILENAME_BASE}}</h1>",
+      "    </div>",
+      "  );",
+      "};",
+      "",
+      "export default ${1:${TM_FILENAME_BASE}};"
+    ],
+    "description": "Default export arrow function"
+  },
+  "Export Arrow Function": {
+    "prefix": "eaf",
+    "body": [
+      "export const ${1:${TM_FILENAME_BASE}} = () => {",
+      "  return (",
+      "    <div>",
+      "      <h1>${1:${TM_FILENAME_BASE}}</h1>",
+      "    </div>",
+      "  );",
+      "};",
+      ""
+    ],
+    "description": "Named export arrow function"
+  }
+}
