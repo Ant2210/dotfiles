@@ -31,34 +31,34 @@ return {
       -- All Opencode keymaps under `ga`
 
       -- gaA = Ask
-      vim.keymap.set({ "n", "x" }, "gaA", function()
+      vim.keymap.set({ "n", "x" }, "gaa", function()
         require("opencode").ask("@this: ", { submit = true })
-      end, { desc = " Opencode: Ask (gaA)" })
+      end, { desc = " Opencode: Ask" })
 
       -- gaS = Select action
-      vim.keymap.set({ "n", "x" }, "gaS", function()
+      vim.keymap.set({ "n", "x" }, "gas", function()
         require("opencode").select()
-      end, { desc = " Opencode: Select action (gaS)" })
+      end, { desc = " Opencode: Select action" })
 
       -- gaP = Prompt using @this
-      vim.keymap.set({ "n", "x" }, "gaP", function()
+      vim.keymap.set({ "n", "x" }, "gap", function()
         require("opencode").prompt("@this")
-      end, { desc = " Opencode: Prompt (gaP)" })
+      end, { desc = " Opencode: Prompt" })
 
       -- gaT = Toggle Opencode panel
-      vim.keymap.set({ "n", "t" }, "gaT", function()
+      vim.keymap.set({ "n", "t" }, "gat", function()
         require("opencode").toggle()
-      end, { desc = " Opencode: Toggle panel (gaT)" })
+      end, { desc = " Opencode: Toggle panel" })
 
       -- gaU = Scroll session half page up
-      vim.keymap.set("n", "gaU", function()
+      vim.keymap.set("n", "gau", function()
         require("opencode").command("session.half.page.up")
-      end, { desc = " Opencode: Half page up (gaU)" })
+      end, { desc = " Opencode: Half page up" })
 
       -- gaD = Scroll session half page down
-      vim.keymap.set("n", "gaD", function()
+      vim.keymap.set("n", "gad", function()
         require("opencode").command("session.half.page.down")
-      end, { desc = " Opencode: Half page down (gaD)" })
+      end, { desc = " Opencode: Half page down" })
 
       -- Which-key group and icons for all `ga` Opencode mappings
       local ok, wk = pcall(require, "which-key")
@@ -70,12 +70,12 @@ return {
             icon = " ",
             mode = { "n", "x", "t" },
           },
-          { "gaA", icon = "", mode = { "n", "x" } },
-          { "gaS", icon = "", mode = { "n", "x" } },
-          { "gaP", icon = "", mode = { "n", "x" } },
-          { "gaT", icon = "", mode = { "n", "t" } },
-          { "gaU", icon = "", mode = "n" },
-          { "gaD", icon = "", mode = "n" },
+          { "gaa", icon = "", mode = { "n", "x" } },
+          { "gas", icon = "", mode = { "n", "x" } },
+          { "gap", icon = "", mode = { "n", "x" } },
+          { "gat", icon = "", mode = { "n", "t" } },
+          { "gau", icon = "", mode = "n" },
+          { "gad", icon = "", mode = "n" },
         })
       end
     end,
