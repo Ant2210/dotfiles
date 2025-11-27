@@ -26,7 +26,7 @@ return {
     "lukas-reineke/virt-column.nvim",
     opts = {
       char = "▕",
-      virtcolumn = "100",
+      virtcolumn = "80",
       highlight = "LineNr",
     },
   },
@@ -40,7 +40,7 @@ return {
             layout = {
               preset = "sidebar",
               layout = {
-                width = 0.15,
+                width = 0.18,
               },
             },
           },
