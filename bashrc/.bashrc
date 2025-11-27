@@ -59,3 +59,4 @@ set skip-completed-text on
 set colored-stats on
 
 alias vim='nvim'
+alias lg='lazygit'
