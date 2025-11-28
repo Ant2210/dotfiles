@@ -8,14 +8,13 @@ return {
         floats = "transparent",
       },
 
-      -- THE IMPORTANT PART
       on_highlights = function(hl, c)
         -- Make active line subtle
         hl.CursorLine = { bg = c.bg_dark, blend = 85 }
 
         -- Remove background from inlay hints
         hl.LspInlayHint = {
-          fg = c.comment, -- nice dim color
+          fg = c.comment,
           bg = "NONE",
         }
       end,
