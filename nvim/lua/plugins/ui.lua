@@ -33,6 +33,14 @@ return {
   {
     "folke/snacks.nvim",
     opts = {
+      animate = {
+        enabled = false,
+        fps = 0,
+        duration = 0,
+      },
+      scroll = { enabled = false },
+      window = { enabled = false },
+      jump = { enabled = false },
       picker = {
         sources = {
           explorer = {
